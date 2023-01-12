@@ -1,1 +1,0 @@
-# -MPsO_4IT_11_JONASOVA_Zdenka_HAJEK
