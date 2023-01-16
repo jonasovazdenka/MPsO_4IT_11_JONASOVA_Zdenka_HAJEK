@@ -1,15 +1,20 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 html {
   scroll-behavior: smooth;
   background-color: #cd9777;
+  font-family: "Poppins", sans-serif;
 }
 body {
   margin: 0;
   padding-top: 100px;
   text-align: center;
-  font-family: monospace;
   color: black;
 }
-
+hr{
+  color: #774936;
+}
 .navbar {
   overflow: hidden;
   background-color: transparent;
@@ -22,7 +27,10 @@ body {
 
 .navbar a {
   display: inline-block;
-  color: #f2f2f2;
+  background: #E6B8A2;
+  color: #774936;
+  border-radius: 25px;
+  margin-top: 10px;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,8 +38,8 @@ body {
 }
 
 .navbar a:hover {
-  background: #ddd;
-  color: black;
+  background: #774936;
+  color: #E6B8A2;
 }
 
 .main {
@@ -43,14 +51,24 @@ p {
   text-align: center;
   padding-top: 50px;
 }
+.content{
+  margin: auto;
+  width: 60%;
+  border: 2px solid #8a5a44;
+  box-shadow: 0 0 20px #8A5A44;
+  border-radius: 25px;
+  padding: 20px 60px 20px 60px;
+  text-align: left;
+  margin-bottom: 200px;
+}
 
 #progress {
   background-color: #8a5a44;
   position: fixed;
   bottom: 20px;
   right: 10px;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   display: grid;
   place-items: center;
   border-radius: 50%;

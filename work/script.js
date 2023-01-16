@@ -22,7 +22,7 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-/*Sliding Cards
+//Sliding Cards
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
@@ -36,4 +36,4 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});*/
+});
