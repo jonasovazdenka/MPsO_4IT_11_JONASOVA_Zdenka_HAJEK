@@ -87,3 +87,16 @@ p {
   font-size: 35px;
   color: black;
 }
+
+
+/*scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e6b8a2;
+  border-radius: 50px;
+}
