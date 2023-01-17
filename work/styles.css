@@ -13,7 +13,10 @@ body {
   color: black;
 }
 hr{
-  color: #774936;
+  height: 2px;
+  background-color: #774936;
+  border: none;
+  box-shadow: 0 0 10px;
 }
 .navbar {
   overflow: hidden;
