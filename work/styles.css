@@ -3,7 +3,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #cd9777;
+  background-color: #A9D6E5;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -14,10 +14,14 @@ body {
 }
 hr{
   height: 2px;
-  background-color: #774936;
+  background-color: #014F86;
   border: none;
   box-shadow: 0 0 10px;
 }
+
+
+/* NAVBAR */
+
 .navbar {
   overflow: hidden;
   background-color: transparent;
@@ -26,51 +30,67 @@ hr{
   top: 0;
   float: none;
   position: fixed;
-}
-
-#html{
-  padding-top: 70px;
+  padding-bottom: 15px;
 }
 
 .navbar a {
   display: inline-block;
-  background: #E6B8A2;
-  color: #774936;
+  background: #89C2D9;
+  color: #014F86;
+  box-shadow: 0 0 10px #014F86;
+  border: 1.5px solid #014F86;
   border-radius: 25px;
+  margin-left: 10px;
   margin-top: 10px;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 10px 15px 10px 15px;
   text-decoration: none;
   font-size: 17px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-  background: #774936;
-  color: #E6B8A2;
+  background: #014F86;
+  color: #89C2D9;
+  
 }
+
 
 .main {
   padding: 16px;
   margin-top: 30px;
 }
 
-p {
-  text-align: center;
-  padding-top: 50px;
+/* LANG NAME */
+
+h2 {
+  color: #014F86;
+  background-color: #89C2D9;
+  display: inline-block;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px #61A5C2;
+} 
+
+/* BLOCK */
+
+#html{
+  padding-top: 70px;
 }
+
 .content{
   margin: auto;
   width: 60%;
-  border: 2px solid #8a5a44;
-  box-shadow: 0 0 20px #8A5A44;
+  border: 2px solid #014F86;
+  box-shadow: 0 0 20px #014F86;
   border-radius: 25px;
   padding: 20px 60px 20px 60px;
   text-align: left;
   margin-bottom: 200px;
 }
 
+/* SCROLL UP */
 #progress {
-  background-color: #8a5a44;
+  background-color: #014F86;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -87,7 +107,7 @@ p {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: #e6b8a2;
+  background-color: #89C2D9;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -104,6 +124,6 @@ p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #e6b8a2;
+  background: #014F86;
   border-radius: 50px;
 }
