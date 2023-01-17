@@ -28,6 +28,10 @@ hr{
   position: fixed;
 }
 
+#html{
+  padding-top: 70px;
+}
+
 .navbar a {
   display: inline-block;
   background: #E6B8A2;
