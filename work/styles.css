@@ -3,7 +3,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #A9D6E5;
+  background-color: #a9d6e5;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -12,13 +12,12 @@ body {
   text-align: center;
   color: black;
 }
-hr{
+hr {
   height: 2px;
-  background-color: #014F86;
+  background-color: #014f86;
   border: none;
   box-shadow: 0 0 10px;
 }
-
 
 /* NAVBAR */
 
@@ -35,10 +34,10 @@ hr{
 
 .navbar a {
   display: inline-block;
-  background: #89C2D9;
-  color: #014F86;
-  box-shadow: 0 0 10px #014F86;
-  border: 1.5px solid #014F86;
+  background: #89c2d9;
+  color: #014f86;
+  box-shadow: 0 0 10px #014f86;
+  border: 1.5px solid #014f86;
   border-radius: 25px;
   margin-left: 10px;
   margin-top: 10px;
@@ -49,11 +48,9 @@ hr{
 }
 
 .navbar a:hover {
-  background: #014F86;
-  color: #89C2D9;
-  
+  background: #014f86;
+  color: #89c2d9;
 }
-
 
 .main {
   padding: 16px;
@@ -63,25 +60,25 @@ hr{
 /* LANG NAME */
 
 h2 {
-  color: #014F86;
-  background-color: #89C2D9;
+  color: #014f86;
+  background-color: #89c2d9;
   display: inline-block;
   padding: 10px 15px 10px 15px;
   border-radius: 20px;
-  box-shadow: inset 0 0 10px #61A5C2;
-} 
+  box-shadow: inset 0 0 10px #61a5c2;
+}
 
 /* BLOCK */
 
-#html{
+#html {
   padding-top: 70px;
 }
 
-.content{
+.content {
   margin: auto;
   width: 60%;
-  border: 2px solid #014F86;
-  box-shadow: 0 0 20px #014F86;
+  border: 2px solid #014f86;
+  box-shadow: 0 0 20px #014f86;
   border-radius: 25px;
   padding: 20px 60px 20px 60px;
   text-align: left;
@@ -90,7 +87,7 @@ h2 {
 
 /* SCROLL UP */
 #progress {
-  background-color: #014F86;
+  background-color: #014f86;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -107,14 +104,13 @@ h2 {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: #89C2D9;
+  background-color: #89c2d9;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 35px;
   color: black;
 }
-
 
 /*scroll bar */
 /* width */
@@ -124,6 +120,6 @@ h2 {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #014F86;
+  background: #014f86;
   border-radius: 50px;
 }

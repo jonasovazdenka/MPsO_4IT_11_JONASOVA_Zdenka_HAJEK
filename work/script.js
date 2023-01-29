@@ -1,4 +1,3 @@
-
 //Scroll Loading
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
@@ -22,18 +21,19 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-//Sliding Cards
+//SLIDING
+const cardContainer = document.querySelector(".html");
+const prevButton = document.querySelector(".prev-button");
+const nextButton = document.querySelector(".next-button");
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  grabCursor: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+let currentIndex = 0;
+
+prevButton.addEventListener("click", () => {
+  currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
+  cardContainer.style.transform = `translateX(-${currentIndex * 310}px)`;
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex = currentIndex < 2 ? currentIndex + 1 : 2;
+  cardContainer.style.transform = `translateX(-${currentIndex * 310}px)`;
 });
