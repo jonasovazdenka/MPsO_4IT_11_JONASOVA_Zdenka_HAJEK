@@ -22,18 +22,37 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 //SLIDING
-const cardContainer = document.querySelector(".html");
-const prevButton = document.querySelector(".prev-button");
-const nextButton = document.querySelector(".next-button");
+let showHtmlCard1 = true;
+let showHtmlCard2 = false;
 
-let currentIndex = 0;
-
-prevButton.addEventListener("click", () => {
-  currentIndex = currentIndex > 0 ? currentIndex - 1 : 0;
-  cardContainer.style.transform = `translateX(-${currentIndex * 310}px)`;
+  //HTML
+document.getElementById("htmlBtn").addEventListener("click", function() {
+  if (showHtmlCard1) {
+    document.getElementById("htmlcard1").style.display = "none";
+    document.getElementById("htmlcard2").style.display = "block";
+    showHtmlCard1 = false;
+    showHtmlCard2 = true;
+  } else {
+    document.getElementById("htmlcard2").style.display = "none";
+    document.getElementById("htmlcard1").style.display = "block";
+    showHtmlCard2 = false;
+    showHtmlCard1 = true;
+  }
 });
 
-nextButton.addEventListener("click", () => {
-  currentIndex = currentIndex < 2 ? currentIndex + 1 : 2;
-  cardContainer.style.transform = `translateX(-${currentIndex * 310}px)`;
-});
+  //CSS
+  let showCssCard1 = true;
+  let showCssCard2 = false;
+  document.getElementById("cssBtn").addEventListener("click", function() {
+    if (showCssCard1) {
+      document.getElementById("csscard1").style.display = "none";
+      document.getElementById("csscard2").style.display = "block";
+      showCssCard1 = false;
+      showCssCard2 = true;
+    } else {
+      document.getElementById("csscard2").style.display = "none";
+      document.getElementById("csscard1").style.display = "block";
+      showCssCard2 = false;
+      showHtmlCard1 = true;
+    }
+  });

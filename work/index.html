@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
@@ -27,11 +26,10 @@
     <!-- Text -->
     <div class="main">
       <!-- HTML -->
-      <a name="html">
-        <div id="html">
-          <div class="html">
+        <div id="html" class="html">
             <h2>HTML</h2>
-            <div class="content">
+            <div class="card-container">
+              <div class="content" id="htmlcard1" style="display: block;">
               <h3>Příklad kódu</h3>
               <hr />
               &lt;!DOCTYPE html&gt; <br />
@@ -41,10 +39,15 @@
               &emsp; &lt;/head&gt; <br />
               &emsp; &lt;body&gt; <br />
               &emsp; &emsp; &lt;p&gt; Nějaký text &lt;/p&gt;<br />
+              &emsp; &emsp; &lt;ul&gt; <br>
+              &emsp; &emsp; &emsp; &lt;li&gt; Bod 1 &lt;/li&gt;<br>
+              &emsp; &emsp; &emsp; &lt;li&gt; Bod 2 &lt;/li&gt;<br>
+              &emsp; &emsp; &emsp; &lt;li&gt; Bod 3 &lt;/li&gt;<br>
+              &emsp; &emsp; &lt;/ul&gt; <br>
               &emsp; &lt;/body&gt;<br />
               &emsp; &lt;/html&gt;<br />
-            </div>
-            <div class="content">
+              </div>
+              <div class="content" id="htmlcard2" style="display: none;">
               <h3>Tipy</h3>
               <hr />
               <ol>
@@ -84,16 +87,14 @@
                   abyste se ujistili, že je správně napsán.
                 </li>
               </ol>
+              </div>
             </div>
-          </div>
-          <button class="prev-button"> &lt; </button>
-          <button class="next-button"> &gt; </button>
+            <button id="htmlBtn">Next</button>
         </div>
-      </a>
-      <a name="css">
+        <!-- CSS -->
         <div id="css">
           <h2>CSS</h2>
-          <div class="content">
+          <div class="content" id="csscard1" style="display: block;">
             <h3>Příklad kódu</h3>
             <hr />
             body { <br />
@@ -110,7 +111,7 @@
             font-size: 20px; <br />
             } <br />
           </div>
-          <div class="content">
+          <div class="content" id="csscard2" style="display: none;">
             <h3>Tipy</h3>
             <ol>
               
@@ -124,10 +125,10 @@
               <li>Pracujte na projektech a vystavujte je na GitHubu, abyste zlepšili své portfolio.</li>
               <li>Sdílejte své projekty a kód s jinými vývojáři a získávejte zpětnou vazbu.</li>
               <li>Přečtěte si dokumentaci k různým frameworkům pro front-end vývoj jako Bootstrap nebo Foundation.</li>
-</ol>
+            </ol>
           </div>
+          <button id="cssBtn">Next</button>
         </div>
-      </a>
       <div id="js">
         <h2>JavaScript</h2>
         <div class="content">
@@ -147,5 +148,6 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
