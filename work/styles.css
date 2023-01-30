@@ -103,7 +103,8 @@ h2 {
 }
 
 button {
-  position: absolute;
+  position: relative;
+  z-index: 1;
   background-color: transparent;
   border: none;
   padding: 10px 15px 10px 15px;
@@ -152,3 +153,11 @@ button {
   background: #014f86;
   border-radius: 50px;
 }
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #014f86;
+
+}
+
