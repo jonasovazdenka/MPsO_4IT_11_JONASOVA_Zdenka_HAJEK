@@ -31,24 +31,6 @@
             <div class="card-container">
 <!-- PRVNÍ KARTA HTML -->
               <div class="content" id="htmlcard1" style="display: block;">
-              <h3>Příklad kódu</h3>
-              <hr />
-                &emsp; &lt;head&gt; <br />
-                &emsp; &emsp; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; <br />
-                &emsp; &lt;/head&gt; <br />
-                &emsp; &lt;body&gt; <br />
-                &emsp; &emsp; &lt;p&gt; Nějaký text &lt;/p&gt;<br />
-                &emsp; &emsp; &lt;ul&gt; <br>
-                &emsp; &emsp; &emsp; &lt;li&gt; Bod 1 &lt;/li&gt;<br>
-                &emsp; &emsp; &emsp; &lt;li&gt; Bod 2 &lt;/li&gt;<br>
-                &emsp; &emsp; &emsp; &lt;li&gt; Bod 3 &lt;/li&gt;<br>
-                &emsp; &emsp; &lt;/ul&gt; <br>
-                &emsp; &lt;/body&gt;<br />
-                &emsp; &lt;/html&gt;<br />
-                &lt;!DOCTYPE html&gt; <br />
-              </div>
-<!-- DRUHÁ KARTA HTML -->
-              <div class="content" id="htmlcard2" style="display: none;">
               <h3>Tipy</h3>
               <hr />
               <ol>
@@ -89,9 +71,44 @@
                 </li>
               </ol>
               </div>
+<!-- DRUHÁ KARTA HTML -->
+              <div class="content" id="htmlcard2" style="display: block;">
+                <h3>Horší verze kódu</h3>
+                <hr />
+                  &lt;!DOCTYPE html&gt; <br />
+
+                  &lt;head&gt; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; &lt;/head&gt; <br />
+                  &lt;body&gt; <br />
+                  &lt;h1&gt;&lt;/h1&gt; <br />
+                  &lt;p&gt; Nějaký text &lt;/p&gt;&lt;ul&gt;<br>
+                  &lt;li&gt;Bod 1&lt;/li&gt;
+                  &lt;li&gt;Bod 2&lt;/li&gt;
+                  &lt;li&gt;Bod 3&lt;/li&gt;&lt;/ul&gt; <br>
+                  &lt;/body&gt;<br />
+                  &lt;/html&gt;<br />
+                </div>
+<!-- TŘETÍ KARTA HTML -->
+              <div class="content" id="htmlcard3" style="display: block;">
+                <h3>Lepší verze kódu</h3>
+                <hr />
+                &lt;!DOCTYPE html&gt; <br />
+                  &emsp; &lt;head&gt; <br />
+                  &emsp; &emsp; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; <br />
+                  &emsp; &lt;/head&gt; <br />
+                  &emsp; &lt;body&gt; <br />
+                  &emsp; &emsp; &lt;p&gt; Nějaký text &lt;/p&gt;<br />
+                  &emsp; &emsp; &lt;ul&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 1 &lt;/li&gt;<br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 2 &lt;/li&gt;<br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 3 &lt;/li&gt;<br>
+                  &emsp; &emsp; &lt;/ul&gt; <br>
+                  &emsp; &lt;/body&gt;<br />
+                  &emsp; &lt;/html&gt;<br />
+                </div>
             </div>
 <!-- TLAČÍTKO NEXT K HTML -->
-            <button id="htmlBtn">Next</button>
+            <button id="prev-button">Prev</button>
+            <button id="next-button">Next</button>
         </div>
 <!-- CSS -->
         <div id="css">
@@ -115,7 +132,7 @@
             } <br />
           </div>
 <!-- DRUHÁ KARTA CSS -->
-          <div class="content" id="csscard2" style="display: none;">
+          <div class="content" id="csscard2" style="display: block;">
             <h3>Tipy</h3>
             <hr>
             <ol>
