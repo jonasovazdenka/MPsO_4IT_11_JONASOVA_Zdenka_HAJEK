@@ -115,6 +115,27 @@ button {
   font-weight: bold;
 }
 
+
+
+/*scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #014f86;
+  border-radius: 50px;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #014f86;
+
+}
+
 /* SCROLL UP */
 #progress {
   background-color: #014f86;
@@ -141,23 +162,3 @@ button {
   font-size: 35px;
   color: black;
 }
-
-/*scroll bar */
-/* width */
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #014f86;
-  border-radius: 50px;
-}
-
-footer {
-  position: absolute;
-  width: 100%;
-  background-color: #014f86;
-
-}
-
