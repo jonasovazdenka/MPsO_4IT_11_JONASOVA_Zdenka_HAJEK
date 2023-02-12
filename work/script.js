@@ -22,27 +22,45 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 //SLIDING
-let showHtmlCard1 = true;
-let showHtmlCard2 = false;
 
-  //HTML
-document.getElementById("htmlBtn").addEventListener("click", function() {
-  if (showHtmlCard1) {
-    document.getElementById("htmlcard1").style.display = "none";
-    document.getElementById("htmlcard2").style.display = "block";
-    showHtmlCard1 = false;
-    showHtmlCard2 = true;
-  } else {
-    document.getElementById("htmlcard2").style.display = "none";
-    document.getElementById("htmlcard1").style.display = "block";
-    showHtmlCard2 = false;
-    showHtmlCard1 = true;
+  /*HTML
+  const cards = document.querySelectorAll('.content');
+  const prevButton = document.querySelector('#prev-button');
+  const nextButton = document.querySelector('#next-button');
+  let currentIndex = 0;
+  
+  function goToCard(index) {
+    cards[currentIndex].classList.remove('active');
+    currentIndex = index;
+    cards[currentIndex].classList.add('active');
   }
-});
+  
+  nextButton.addEventListener('click', () => {
+    goToCard((currentIndex + 1) % cards.length);
+  });
+  
+  prevButton.addEventListener('click', () => {
+    goToCard((currentIndex - 1 + cards.length) % cards.length);
+  });
+  
+  cards.forEach((card, index) => {
+    if (index === currentIndex) {
+      card.classList.add('active');
+    }
+  });*/const cards = document.querySelectorAll('.content');
+console.log(cards);
+const prevButton = document.querySelector('#prev-button');
+console.log(prevButton);
+const nextButton = document.querySelector('#next-button');
+console.log(nextButton);
+
+  
+  
 
   //CSS
   let showCssCard1 = true;
   let showCssCard2 = false;
+
   document.getElementById("cssBtn").addEventListener("click", function() {
     if (showCssCard1) {
       document.getElementById("csscard1").style.display = "none";
@@ -53,6 +71,6 @@ document.getElementById("htmlBtn").addEventListener("click", function() {
       document.getElementById("csscard2").style.display = "none";
       document.getElementById("csscard1").style.display = "block";
       showCssCard2 = false;
-      showHtmlCard1 = true;
+      showCssCard1 = true;
     }
   });
