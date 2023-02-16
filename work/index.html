@@ -14,11 +14,11 @@
       <span id="progress-value">&#8593;</span>
     </div>
 <!-- Links -->
-    <div class="navbar">
+    <header>
       <a href="#html">HTML</a>
       <a href="#css">CSS</a>
       <a href="#js">JS</a>
-    </div>
+    </header>
 
 <!-- NADPIS -->
     <h1>Základy pro založení webu</h1>
@@ -72,7 +72,7 @@
               </ol>
               </div>
 <!-- DRUHÁ KARTA HTML -->
-              <div class="content" id="htmlcard2" style="display: block;">
+              <div class="content" id="htmlcard2" style="display: none;">
                 <h3>Horší verze kódu</h3>
                 <hr />
                   &lt;!DOCTYPE html&gt; <br />
@@ -88,7 +88,7 @@
                   &lt;/html&gt;<br />
                 </div>
 <!-- TŘETÍ KARTA HTML -->
-              <div class="content" id="htmlcard3" style="display: block;">
+              <div class="content" id="htmlcard3" style="display: none;">
                 <h3>Lepší verze kódu</h3>
                 <hr />
                 &lt;!DOCTYPE html&gt; <br />
@@ -106,9 +106,17 @@
                   &emsp; &lt;/html&gt;<br />
                 </div>
             </div>
+<!-- UKAZATEL -->
+              <div class="dots">
+                <div class="dot active" onclick="currentSlide(1, 'htmlcards')"></div>
+                <div class="dot" onclick="currentSlide(2, 'htmlcards')"></div>
+                <div class="dot" onclick="currentSlide(3, 'htmlcards')"></div>
+              </div>
 <!-- TLAČÍTKO NEXT K HTML -->
-            <button id="prev-button">Prev</button>
-            <button id="next-button">Next</button>
+          <div class="btn">
+            <button id="html-Prev-Btn">Previous</button>
+            <button id="html-Nxt-Btn">Next</button>
+          </div>
         </div>
 <!-- CSS -->
         <div id="css">
@@ -132,7 +140,7 @@
             } <br />
           </div>
 <!-- DRUHÁ KARTA CSS -->
-          <div class="content" id="csscard2" style="display: block;">
+          <div class="content" id="csscard2" style="display: none;">
             <h3>Tipy</h3>
             <hr>
             <ol>
@@ -149,9 +157,11 @@
             </ol>
           </div>
 <!-- TLAČÍTKO NEXT K CSS -->
-          <button id="cssBtn">Next</button>
+          <button id="css-Prev-Btn">Previous</button>
+          <button id="css-Nxt-Btn">Next</button>
         </div>
       <div id="js">
+<!-- JAVASCRIPT -->
         <h2>JavaScript</h2>
         <div class="content" id="jscard1" style="display: block;">
           <h3>Tipy</h3>
@@ -172,8 +182,9 @@
          UKÁZKOVÝ KÓD JS
 <!-- UKÁZKOVÝ KÓD JS -->
         </div>
-<!-- TLAČÍTKO NEXT K CSS -->
-        <button id="cssBtn">Next</button>
+<!-- TLAČÍTKO NEXT K JS -->
+        <button id="js-Prev-Btn">Previous</button>
+        <button id="js-Nxt-Btn">Next</button>
       </div>
     </div>
     <footer>

@@ -25,7 +25,7 @@ h1 {
 
 /* NAVBAR */
 
-.navbar {
+header {
   overflow: hidden;
   background-color: transparent;
   color: #0000;
@@ -36,7 +36,7 @@ h1 {
   padding-bottom: 15px;
 }
 
-.navbar a {
+header a {
   display: inline-block;
   background: #89c2d9;
   color: #014f86;
@@ -51,7 +51,7 @@ h1 {
   font-weight: bold;
 }
 
-.navbar a:hover {
+header a:hover {
   background: #014f86;
   color: #89c2d9;
 }
@@ -102,10 +102,37 @@ h2 {
   display: block;
 }
 
+/* DOT */
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #a9d6e5;
+  outline: 1px solid #014f86;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #014f86;
+}
+
+
+/*BUTTON*/
+
 button {
   position: relative;
   z-index: 1;
-  background-color: transparent;
+  background-color: #89c2d9;
   border: none;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
@@ -113,6 +140,11 @@ button {
   box-shadow: 0 0 10px #014f86;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  margin: 0 20px;
+}
+
+.btn {
+  align-items: center;
 }
 
 

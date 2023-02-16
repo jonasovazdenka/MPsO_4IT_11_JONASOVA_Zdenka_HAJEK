@@ -23,54 +23,43 @@ window.onload = calcScrollValue;
 
 //SLIDING
 
-  /*HTML
-  const cards = document.querySelectorAll('.content');
-  const prevButton = document.querySelector('#prev-button');
-  const nextButton = document.querySelector('#next-button');
-  let currentIndex = 0;
-  
-  function goToCard(index) {
-    cards[currentIndex].classList.remove('active');
-    currentIndex = index;
-    cards[currentIndex].classList.add('active');
-  }
-  
-  nextButton.addEventListener('click', () => {
-    goToCard((currentIndex + 1) % cards.length);
-  });
-  
-  prevButton.addEventListener('click', () => {
-    goToCard((currentIndex - 1 + cards.length) % cards.length);
-  });
-  
-  cards.forEach((card, index) => {
-    if (index === currentIndex) {
-      card.classList.add('active');
-    }
-  });*/const cards = document.querySelectorAll('.content');
-console.log(cards);
-const prevButton = document.querySelector('#prev-button');
-console.log(prevButton);
-const nextButton = document.querySelector('#next-button');
-console.log(nextButton);
+// Objekt s názvy karet pro každou skupinu
+const cardNames = {
+  html: ["htmlcard1", "htmlcard2", "htmlcard3"],
+  css: ["csscard1", "csscard2"],
+  js: ["jscard1", "jscard2", "jscard3"],
+};
 
-  
-  
+// Funkce pro posunutí na další nebo předchozí kartu pro danou skupinu
+function changeCard(groupName, step) {
+  const cards = cardNames[groupName];
+  const currentCard = cards.findIndex((card) => getComputedStyle(document.getElementById(card)).display !== "none");
+  const nextCard = (currentCard + cards.length + step) % cards.length;
+  cards.forEach((card) => document.getElementById(card).style.display = "none");
+  document.getElementById(cards[nextCard]).style.display = "block";
+}
 
-  //CSS
-  let showCssCard1 = true;
-  let showCssCard2 = false;
+// Přidání event listenerů pro tlačítka pro každou skupinu
+document.getElementById("html-Nxt-Btn").addEventListener("click", () => changeCard("html", 1));
+document.getElementById("html-Prev-Btn").addEventListener("click", () => changeCard("html", -1));
 
-  document.getElementById("cssBtn").addEventListener("click", function() {
-    if (showCssCard1) {
-      document.getElementById("csscard1").style.display = "none";
-      document.getElementById("csscard2").style.display = "block";
-      showCssCard1 = false;
-      showCssCard2 = true;
+document.getElementById("css-Nxt-Btn").addEventListener("click", () => changeCard("css", 1));
+document.getElementById("css-Prev-Btn").addEventListener("click", () => changeCard("css", -1));
+
+document.getElementById("js-Nxt-Btn").addEventListener("click", () => changeCard("js", 1));
+document.getElementById("js-Prev-Btn").addEventListener("click", () => changeCard("js", -1));
+
+// DOTS
+
+function updateDots(slideIndex, cardGroup) {
+  const dots = document.querySelectorAll(`#${cardGroup} .dots .dot`);
+  for (let i = 0; i < dots.length; i++) {
+    if (i === slideIndex - 1) {
+      dots[i].classList.add('active');
+      dots[i].classList.remove('dot');
     } else {
-      document.getElementById("csscard2").style.display = "none";
-      document.getElementById("csscard1").style.display = "block";
-      showCssCard2 = false;
-      showCssCard1 = true;
+      dots[i].classList.add('dot');
+      dots[i].classList.remove('active');
     }
-  });
+  }
+}
