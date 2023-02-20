@@ -3,7 +3,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #a9d6e5;
+  background-color: #cdf0ff;
   font-family: "Poppins", sans-serif;
 }
 body {
@@ -34,11 +34,12 @@ header {
   float: none;
   position: fixed;
   padding-bottom: 15px;
+  z-index: 2;
 }
 
 header a {
   display: inline-block;
-  background: #89c2d9;
+  background: #cdf0ff;
   color: #014f86;
   box-shadow: 0 0 10px #014f86;
   border: 1.5px solid #014f86;
@@ -54,6 +55,7 @@ header a {
 header a:hover {
   background: #014f86;
   color: #89c2d9;
+  transition: 0.5s;
 }
 
 .main {
@@ -84,12 +86,34 @@ h2 {
     flex-direction: column;
     align-items: center;
 }
+/* HTML TIPY */
+#htmlcard1 ol li {
+  line-height: 45px;
+}
+
+#htmlcard1 a {
+  text-decoration: none;
+  color: black;
+}
+
+#theme{
+  text-decoration: underline;
+}
+
+/* LEPŠÍ VERZE KÓDU */
+
+#htmlcard3 p {
+  line-height: 37px;
+}
+
+/* SAMOTNÁ KARTA */
 
 .content {
+  background-color: #cdf0ff;
   margin: auto;
   display: none;
   width: 60%;
-  height: 400px;
+  height: 550px;
   border: 2px solid #014f86;
   box-shadow: 0 0 20px #014f86;
   border-radius: 25px;
@@ -165,7 +189,6 @@ footer {
   position: absolute;
   width: 100%;
   background-color: #014f86;
-
 }
 
 /* SCROLL UP */
@@ -181,6 +204,7 @@ footer {
   border-radius: 50%;
   box-shadow: 0 0 10px;
   cursor: pointer;
+  z-index: 3;
 }
 
 #progress-value {

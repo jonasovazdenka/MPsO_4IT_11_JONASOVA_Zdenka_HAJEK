@@ -26,7 +26,7 @@ window.onload = calcScrollValue;
 // Objekt s názvy karet pro každou skupinu
 const cardNames = {
   html: ["htmlcard1", "htmlcard2", "htmlcard3"],
-  css: ["csscard1", "csscard2"],
+  css: ["csscard1", "csscard2", "csscard3"],
   js: ["jscard1", "jscard2", "jscard3"],
 };
 

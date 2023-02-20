@@ -18,6 +18,7 @@
       <a href="#html">HTML</a>
       <a href="#css">CSS</a>
       <a href="#js">JS</a>
+      <a href="#sandbox">SANDBOX</a>
     </header>
 
 <!-- NADPIS -->
@@ -31,43 +32,31 @@
             <div class="card-container">
 <!-- PRVNÍ KARTA HTML -->
               <div class="content" id="htmlcard1" style="display: block;">
-              <h3>Tipy</h3>
+              <h3>Tipy pro začátečníky</h3>
               <hr />
               <ol>
                 <li>
-                  Správná struktura - Vytvořte jasnou strukturu svého HTML
-                  dokumentu pomocí prvků jako head, header, main, article,
-                  footer.
+                  <font id="theme"> Správná struktura HTML</font> -  HTML tag &lt;html&gt;, head tag &lt;head&gt;, body tag &lt;body&gt;
                 </li>
-
                 <li>
-                  Semantické prvky - Používejte semantické prvky, jako například
-                  h1-h6 pro nadpisy, p pro odstavce, a pro odkazy atd.
+                  <font id="theme"> Nezapomeňte uzavírat tagy</font> - &lt;p&gt; Toto je příklad &lt;/p&gt; <br>
+                  <font color="red"> &emsp;POZOR!</font> 
+                  Některé tagy se uzavárají jinak např. <font color="red"> &lt;br/&gt;</font> a <font color="red">&lt;img ... /&gt; </font>
                 </li>
-
                 <li>
-                  Atributy - Používejte atributy, jako například class nebo id,
-                  abyste mohli lépe cílit na prvky pomocí CSS.
+                  <font id="theme">Pomocné weby</font> - <a href="https://www.w3schools.com/" class="w3s" target="_blank">W3Schools</a>
                 </li>
-
                 <li>
-                  Odkazy - Používejte odkazy k propojení svých stránek nebo ke
-                  zdrojům externích stránek.
+                  <font id="theme">Stylování stránky</font> - vytvořte nový soubor ".css" nepište to do HTML
+                  <br>&emsp;(pojmenujte ho jak chcete, nejčasteji je používání style.css, tak vám to i html navrhne při linkování)
+                  <br>&emsp;pak stačí soubor pouze "nalinkovat": <font color="red">&lt;link rel="stylesheet" href="style.css"&gt;</font>
                 </li>
-
                 <li>
-                  Obrázky - Používejte obrázky a grafiku k vylepšení vzhledu a
-                  zvýšení atraktivity vašeho webu.
+                  <font id="theme">Správné značky pro nadpisy</font> - První/největší nadpis bude mít tag <font color="red">&lt;h1&gt;</font> Podnadpis bude mít tag <font color="red">&lt;h2&gt;</font> apod. (max. tag je &lt;h6&gt;)
+                  <br>&emsp; Pomáhá to se lépe zorientovat na stránce.
                 </li>
-
                 <li>
-                  Tabulky - Použijte tabulky k uspořádání dat nebo k vytvoření
-                  rozvržení stránky.
-                </li>
-
-                <li>
-                  Validace - Ověřte svůj kód pomocí nástrojů pro validaci HTML,
-                  abyste se ujistili, že je správně napsán.
+                  <font id="theme">Alt tag</font> - používá se třeba při img tagu (obrázek). Když uživatel najede kurzorem na obrázek, zobrazí se text který je napsaný v alt tagu.
                 </li>
               </ol>
               </div>
@@ -79,11 +68,21 @@
 
                   &lt;head&gt; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; &lt;/head&gt; <br />
                   &lt;body&gt; <br />
-                  &lt;h1&gt;&lt;/h1&gt; <br />
-                  &lt;p&gt; Nějaký text &lt;/p&gt;&lt;ul&gt;<br>
-                  &lt;li&gt;Bod 1&lt;/li&gt;
-                  &lt;li&gt;Bod 2&lt;/li&gt;
-                  &lt;li&gt;Bod 3&lt;/li&gt;&lt;/ul&gt; <br>
+                  &emsp;&lt;table&gt; <br>
+                  &emsp;&emsp;&lt;tr&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;1.&lt;/td&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;Jablko&lt;/td&gt; <br>
+                  &emsp;&emsp;&lt;/tr&gt; <br>
+                  &emsp;&emsp;&lt;tr&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;2.&lt;/td&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;Hruška&lt;/td&gt; <br>
+                  &emsp;&emsp;&lt;/tr&gt; <br>
+                  &emsp;&emsp;&lt;tr&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;3.&lt;/td&gt; <br>
+                  &emsp;&emsp;&emsp;&lt;td&gt;Banán&lt;/td&gt; <br>
+                  &emsp;&emsp;&lt;/tr&gt; <br>
+                  &emsp;&lt;/table&gt; <br>
+                  
                   &lt;/body&gt;<br />
                   &lt;/html&gt;<br />
                 </div>
@@ -91,19 +90,20 @@
               <div class="content" id="htmlcard3" style="display: none;">
                 <h3>Lepší verze kódu</h3>
                 <hr />
+                <p>
                 &lt;!DOCTYPE html&gt; <br />
                   &emsp; &lt;head&gt; <br />
                   &emsp; &emsp; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; <br />
                   &emsp; &lt;/head&gt; <br />
                   &emsp; &lt;body&gt; <br />
-                  &emsp; &emsp; &lt;p&gt; Nějaký text &lt;/p&gt;<br />
-                  &emsp; &emsp; &lt;ul&gt; <br>
-                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 1 &lt;/li&gt;<br>
-                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 2 &lt;/li&gt;<br>
-                  &emsp; &emsp; &emsp; &lt;li&gt; Bod 3 &lt;/li&gt;<br>
+                  &emsp; &emsp; &lt;ul style="list-style-type: disc; color: #333;"&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li> Jablko &lt;/li&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li> Hruška &lt;/li&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li> Banán &lt;/li&gt; <br>
                   &emsp; &emsp; &lt;/ul&gt; <br>
                   &emsp; &lt;/body&gt;<br />
                   &emsp; &lt;/html&gt;<br />
+                </p>
                 </div>
             </div>
 <!-- UKAZATEL -->
@@ -122,49 +122,55 @@
         <div id="css">
           <h2>CSS</h2>
 <!-- PRVNÍ KARTA CSS -->
-          <div class="content" id="csscard1" style="display: block;">
-            <h3>Příklad kódu</h3>
-            <hr />
-            body { <br />
-            background-color: lightblue; <br />
-            } <br />
-            <br />
-            h1 { <br />
-            color: white; <br />
-            text-align: center; <br />
-            } <br />
-            <br />
-            p { <br />
-            font-family: verdana; <br />
-            font-size: 20px; <br />
-            } <br />
-          </div>
-<!-- DRUHÁ KARTA CSS -->
-          <div class="content" id="csscard2" style="display: none;">
+          <div class="content" id="csscard1" style="display: none;">
             <h3>Tipy</h3>
             <hr>
             <ol>
-              <li>Začněte s jednoduchými projekty jako například portfolio nebo landing page.</li>
-              <li>Naučte se základní syntaxi a vlastnosti (selektory, box model, flexbox a grid).</li>
-              <li>Využívejte více stylů pro více různých rozměrů obrazovky (responsive design).</li>
-              <li>Snažte se využívat více než jen jednoduché barvy a písma pro design.</li>
-              <li>Pracujte s CSS preprocessory jako Sass nebo Less ke zjednodušení a automatizaci CSS.</li>
-              <li>Sledujte online tutoriály a cvičení, abyste se učili od odborníků.</li>
-              <li>Zkoušejte nové efekty a techniky, abyste se učili novým věcem.</li>
-              <li>Pracujte na projektech a vystavujte je na GitHubu, abyste zlepšili své portfolio.</li>
-              <li>Sdílejte své projekty a kód s jinými vývojáři a získávejte zpětnou vazbu.</li>
-              <li>Přečtěte si dokumentaci k různým frameworkům pro front-end vývoj jako Bootstrap nebo Foundation.</li>
+            <li></li>
             </ol>
+          </div>
+<!-- DRUHÁ KARTA CSS -->       
+          <div class="content" id="csscard2" style="display: block;">
+          <h3>Lepší verze kódu</h3>
+          <hr />
+          h1 { <br>
+            font-weight: bold; <br>
+            font-size: 24px; <br>
+            font-family: Arial, sans-serif; <br>
+            color: #FFCC00; <br>
+            margin: 25px auto 10px; <br>
+            text-align: center; <br>
+            text-transform: uppercase; <br>
+            letter-spacing: 1px; <br>
+          }
+          
+          </div>
+<!-- TŘETÍ KARTA CSS -->
+          <div class="content" id="csscard3" style="display: none;">
+            <h3>Horší verze kódu</h3>
+            <hr />
+            h1 {
+              font: bold 24px Arial, sans-serif;
+              color: #ffcc00;
+              margin-top: 25px;
+              margin-bottom: 10px;
+              text-align: center;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            }
+            
           </div>
 <!-- TLAČÍTKO NEXT K CSS -->
           <button id="css-Prev-Btn">Previous</button>
           <button id="css-Nxt-Btn">Next</button>
         </div>
-      <div id="js">
 <!-- JAVASCRIPT -->
+      <div id="js">
         <h2>JavaScript</h2>
+<!-- PRVNÍ KARTA JS -->
         <div class="content" id="jscard1" style="display: block;">
           <h3>Tipy</h3>
+          <hr>
           <ol>
             <li>Naučte se základní syntaxi a datové typy (proměnné, funkce, objekty, pole).</li>
             <li>Pracujte s DOM (Document Object Model) pro manipulaci s HTML elementy.</li>
@@ -178,17 +184,21 @@
             <li>Začněte s jednoduchými úlohami jako například kalkulačka nebo to-do aplikace.</li>
           </ol>
         </div>
+<!-- DRUHÁ KARTA JS -->
         <div class="content" id="jscard2" style="display: none;">
-         UKÁZKOVÝ KÓD JS
-<!-- UKÁZKOVÝ KÓD JS -->
+          <h3>Lepší verze kódu</h3>
+         <hr>
+        </div>
+<!-- TŘETÍ KARTA JS -->
+        <div class="content" id="jscard3" style="display: none;">
+          <h3>Horší verze kódu</h3>
+          <hr>
         </div>
 <!-- TLAČÍTKO NEXT K JS -->
         <button id="js-Prev-Btn">Previous</button>
-        <button id="js-Nxt-Btn">Next</button>
-      </div>
-    </div>
+        <button id="js-Nxt-Btn" style="margin-bottom: 50px;">Next</button>
     <footer>
-      <p>Verze 0.0.0.2</p>
+      <p>Verze 0.5</p>
     </footer>
     <script src="script.js"></script>
   </body>
