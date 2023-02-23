@@ -18,22 +18,24 @@
       <a href="#html">HTML</a>
       <a href="#css">CSS</a>
       <a href="#js">JS</a>
-      <a href="#sandbox">SANDBOX</a>
     </header>
 
 <!-- NADPIS -->
+  <div class="nadpis">
     <h1>Základy pro založení webu</h1>
+    <h3>Základy HTML, CSS, a JS</h3>
+  </div>
 
 <!-- Text -->
     <div class="main">
 <!-- HTML -->
         <div id="html" class="html">
-            <h2>HTML</h2>
+            <h2 class="h-html">HTML</h2>
             <div class="card-container">
 <!-- PRVNÍ KARTA HTML -->
-              <div class="content" id="htmlcard1" style="display: block;">
+              <div class="content htmlcard" id="htmlcard1" style="display: block;">
               <h3>Tipy pro začátečníky</h3>
-              <hr />
+              <hr class="hr-html"/>
               <ol>
                 <li>
                   <font id="theme"> Správná struktura HTML</font> -  HTML tag &lt;html&gt;, head tag &lt;head&gt;, body tag &lt;body&gt;
@@ -61,11 +63,11 @@
               </ol>
               </div>
 <!-- DRUHÁ KARTA HTML -->
-              <div class="content" id="htmlcard2" style="display: none;">
+              <div class="content htmlcard" id="htmlcard2" style="display: none;">
                 <h3>Horší verze kódu</h3>
-                <hr />
+                <hr class="hr-html"/>
+                <p>
                   &lt;!DOCTYPE html&gt; <br />
-
                   &lt;head&gt; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; &lt;/head&gt; <br />
                   &lt;body&gt; <br />
                   &emsp;&lt;table&gt; <br>
@@ -82,14 +84,14 @@
                   &emsp;&emsp;&emsp;&lt;td&gt;Banán&lt;/td&gt; <br>
                   &emsp;&emsp;&lt;/tr&gt; <br>
                   &emsp;&lt;/table&gt; <br>
-                  
                   &lt;/body&gt;<br />
                   &lt;/html&gt;<br />
+                </p>
                 </div>
 <!-- TŘETÍ KARTA HTML -->
-              <div class="content" id="htmlcard3" style="display: none;">
+              <div class="content htmlcard" id="htmlcard3" style="display: none;">
                 <h3>Lepší verze kódu</h3>
-                <hr />
+                <hr class="hr-html"/>
                 <p>
                 &lt;!DOCTYPE html&gt; <br />
                   &emsp; &lt;head&gt; <br />
@@ -97,9 +99,9 @@
                   &emsp; &lt;/head&gt; <br />
                   &emsp; &lt;body&gt; <br />
                   &emsp; &emsp; &lt;ul style="list-style-type: disc; color: #333;"&gt; <br>
-                  &emsp; &emsp; &emsp; &lt;li> Jablko &lt;/li&gt; <br>
-                  &emsp; &emsp; &emsp; &lt;li> Hruška &lt;/li&gt; <br>
-                  &emsp; &emsp; &emsp; &lt;li> Banán &lt;/li&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Jablko &lt;/li&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Hruška &lt;/li&gt; <br>
+                  &emsp; &emsp; &emsp; &lt;li&gt; Banán &lt;/li&gt; <br>
                   &emsp; &emsp; &lt;/ul&gt; <br>
                   &emsp; &lt;/body&gt;<br />
                   &emsp; &lt;/html&gt;<br />
@@ -112,27 +114,63 @@
                 <div class="dot" onclick="currentSlide(2, 'htmlcards')"></div>
                 <div class="dot" onclick="currentSlide(3, 'htmlcards')"></div>
               </div>
-<!-- TLAČÍTKO NEXT K HTML -->
+<!-- TLAČÍTKA K HTML -->
           <div class="btn">
-            <button id="html-Prev-Btn">Previous</button>
-            <button id="html-Nxt-Btn">Next</button>
+            <button id="html-Prev-Btn" class="html-btn">Předchozí</button>
+            <button id="html-Nxt-Btn" class="html-btn">Další</button>
           </div>
-        </div>
+<!-- DRUHÁ ČÁST KARET HTML -->
+  <!-- PRVNÍ KARTA HTML -->
+          <div class="content htmlcard" id="htmlcard4" style="display: block;">
+            <h3>Příklad stránky napsané pouze pomocí HTML</h2>
+              <hr class="hr-html">
+              givneiovenwiovnewio
+          </div>
+          <div class="content htmlcard" id="htmlcard5" style="display: none;">
+            <h3>Hiii</h3>
+          </div>
+<!-- UKAZATEL -->
+          <div class="dots">
+            <div class="dot active" onclick="currentSlide(1, 'htmlcards')"></div>
+            <div class="dot" onclick="currentSlide(2, 'htmlcards')"></div>
+            <div class="dot" onclick="currentSlide(3, 'htmlcards')"></div>
+          </div>
+<!-- TLAČÍTKA K HTML -->
+      <div class="btn">
+        <button id="html2-Prev-Btn" class="html-btn">Předchozí</button>
+        <button id="html2-Nxt-Btn" class="html-btn">Další</button>
+      </div>
 <!-- CSS -->
         <div id="css">
-          <h2>CSS</h2>
+          
+          <h2 class="h-css">CSS</h2>
 <!-- PRVNÍ KARTA CSS -->
-          <div class="content" id="csscard1" style="display: none;">
+          <div class="content csscard" id="csscard1" style="display: block;">
             <h3>Tipy</h3>
-            <hr>
+            <hr class="hr-css">
             <ol>
-            <li></li>
+              <li>CSS se používá k vzhledu webových stránek.</li>
+
+              <li>id v HTML se v CSS značí jako "#" a class v HTML se v CSS značí jako "." <br>
+                Př. HTML: &lt;div class="content"&gt; CSS: .content{ }</li>
+
+              <li>Box model popisuje, jak jsou prvky webové stránky vizuálně reprezentovány.</li>
+
+              <li>Existuje mnoho různých typů selektorů v CSS, které umožňují vybírat různé prvky na základě jejich názvu, třídy, id nebo jiných vlastností.</li>
+
+              <li>CSS používá kaskádování, což znamená, že pokud máte více pravidel pro stejný prvek, bude se používat pravidlo s nejvyšší váhou.</li>
+
+              <li>Existuje mnoho různých jednotek, které mohou být použity v CSS, včetně pixelů, procent, em a rem.</li>
+
+              <li>CSS umožňuje používat různé typy barev, včetně hexadecimálních hodnot, RGB hodnot a jmenných barev.</li>
+
+              <li>CSS umožňuje různé úpravy textu, jako je změna velikosti písma, barvy, zarovnání a další.</li>
             </ol>
           </div>
 <!-- DRUHÁ KARTA CSS -->       
-          <div class="content" id="csscard2" style="display: block;">
+          <div class="content csscard" id="csscard2" style="display: none;">
           <h3>Lepší verze kódu</h3>
-          <hr />
+          <hr class="hr-css"/>
           h1 { <br>
             font-weight: bold; <br>
             font-size: 24px; <br>
@@ -146,31 +184,31 @@
           
           </div>
 <!-- TŘETÍ KARTA CSS -->
-          <div class="content" id="csscard3" style="display: none;">
+          <div class="content csscard" id="csscard3" style="display: none;">
             <h3>Horší verze kódu</h3>
-            <hr />
-            h1 {
-              font: bold 24px Arial, sans-serif;
-              color: #ffcc00;
-              margin-top: 25px;
-              margin-bottom: 10px;
-              text-align: center;
-              text-transform: uppercase;
-              letter-spacing: 1px;
+            <hr class="hr-css"/>
+            h1 { <br>
+              font: bold 24px Arial, sans-serif;<br>
+              color: #ffcc00; <br>
+              margin-top: 25px; <br>
+              margin-bottom: 10px; <br>
+              text-align: center; <br>
+              text-transform: uppercase; <br>
+              letter-spacing: 1px; <br>
             }
             
           </div>
 <!-- TLAČÍTKO NEXT K CSS -->
-          <button id="css-Prev-Btn">Previous</button>
-          <button id="css-Nxt-Btn">Next</button>
+          <button id="css-Prev-Btn" class="css-btn">Předchozí</button>
+          <button id="css-Nxt-Btn" class="css-btn">Další</button>
         </div>
 <!-- JAVASCRIPT -->
       <div id="js">
-        <h2>JavaScript</h2>
+        <h2 class="h-js">JavaScript</h2>
 <!-- PRVNÍ KARTA JS -->
-        <div class="content" id="jscard1" style="display: block;">
+        <div class="content jscard" id="jscard1" style="display: block;">
           <h3>Tipy</h3>
-          <hr>
+          <hr class="hr-js">
           <ol>
             <li>Naučte se základní syntaxi a datové typy (proměnné, funkce, objekty, pole).</li>
             <li>Pracujte s DOM (Document Object Model) pro manipulaci s HTML elementy.</li>
@@ -185,20 +223,20 @@
           </ol>
         </div>
 <!-- DRUHÁ KARTA JS -->
-        <div class="content" id="jscard2" style="display: none;">
+        <div class="content jscard" id="jscard2" style="display: none;">
           <h3>Lepší verze kódu</h3>
-         <hr>
+         <hr class="hr-js">
         </div>
 <!-- TŘETÍ KARTA JS -->
-        <div class="content" id="jscard3" style="display: none;">
+        <div class="content jscard" id="jscard3" style="display: none;">
           <h3>Horší verze kódu</h3>
-          <hr>
+          <hr class="hr-js">
         </div>
 <!-- TLAČÍTKO NEXT K JS -->
-        <button id="js-Prev-Btn">Previous</button>
-        <button id="js-Nxt-Btn" style="margin-bottom: 50px;">Next</button>
+        <button id="js-Prev-Btn" class="js-btn">Předchozí</button>
+        <button id="js-Nxt-Btn" class="js-btn" style="margin-bottom: 50px;">Další</button>
     <footer>
-      <p>Verze 0.5</p>
+      <p>Verze 0.6</p>
     </footer>
     <script src="script.js"></script>
   </body>

@@ -15,7 +15,7 @@ let calcScrollValue = () => {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient(#014F86 ${scrollValue}%, #61A5C2 ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#D4A276 ${scrollValue}%, #F3D5B5 ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;
@@ -26,6 +26,7 @@ window.onload = calcScrollValue;
 // Objekt s názvy karet pro každou skupinu
 const cardNames = {
   html: ["htmlcard1", "htmlcard2", "htmlcard3"],
+  html2: ["htmlcard4", "htmlcard5"],
   css: ["csscard1", "csscard2", "csscard3"],
   js: ["jscard1", "jscard2", "jscard3"],
 };
@@ -42,6 +43,9 @@ function changeCard(groupName, step) {
 // Přidání event listenerů pro tlačítka pro každou skupinu
 document.getElementById("html-Nxt-Btn").addEventListener("click", () => changeCard("html", 1));
 document.getElementById("html-Prev-Btn").addEventListener("click", () => changeCard("html", -1));
+
+document.getElementById("html2-Nxt-Btn").addEventListener("click", () => changeCard("html2", 1));
+document.getElementById("html2-Prev-Btn").addEventListener("click", () => changeCard("html2", -1));
 
 document.getElementById("css-Nxt-Btn").addEventListener("click", () => changeCard("css", 1));
 document.getElementById("css-Prev-Btn").addEventListener("click", () => changeCard("css", -1));
