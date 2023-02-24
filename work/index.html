@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
-    <title>Interaktivni tahak</title>
+    <title>Interaktivní tahák | Maturitní práce</title>
   </head>
   <body>
     <div id="progress">
@@ -109,11 +109,12 @@
                 </div>
             </div>
 <!-- UKAZATEL -->
-              <div class="dots">
-                <div class="dot active" onclick="currentSlide(1, 'htmlcards')"></div>
-                <div class="dot" onclick="currentSlide(2, 'htmlcards')"></div>
-                <div class="dot" onclick="currentSlide(3, 'htmlcards')"></div>
-              </div>
+            <div class="dots">
+              <span class="dot active html-dot" onclick="currentCard('html', 0)"></span>
+              <span class="dot html-dot" onclick="currentCard('html', 1)"></span>
+              <span class="dot html-dot" onclick="currentCard('html', 2)"></span>
+            </div>
+
 <!-- TLAČÍTKA K HTML -->
           <div class="btn">
             <button id="html-Prev-Btn" class="html-btn">Předchozí</button>
@@ -121,19 +122,38 @@
           </div>
 <!-- DRUHÁ ČÁST KARET HTML -->
   <!-- PRVNÍ KARTA HTML -->
-          <div class="content htmlcard" id="htmlcard4" style="display: block;">
-            <h3>Příklad stránky napsané pouze pomocí HTML</h2>
+          <div class="content html2card" id="html2card1" style="display: block;">
+            <h3>Příklad stránky napsané pouze pomocí HTML (Kód)</h2>
               <hr class="hr-html">
-              givneiovenwiovnewio
+              <p>
+                &lt;!DOCTYPE html&gt; <br>
+                &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                  &lt;title&gt;Basic Login Page&lt;/title&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                  &lt;form&gt; <br>
+                    &lt;h2&gt;Login&lt;/h2&gt; <br>
+                    &lt;label for="username"&gt;Username:&lt;/label&gt; <br>
+                    &lt;input type="text" id="username" name="username" required&gt; <br>
+                    &lt;label for="password"&gt;Password:&lt;/label&gt; <br>
+                    &lt;input type="password" id="password" name="password" required&gt; <br>
+                    &lt;input type="submit" value="Login"&gt; <br>
+                  &lt;/form&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+              </p>
           </div>
-          <div class="content htmlcard" id="htmlcard5" style="display: none;">
-            <h3>Hiii</h3>
+  <!-- DRUHÁ KARTA HTML -->
+          <div class="content html2card" id="html2card2" style="display: none;">
+            <h3>Příklad stránky napsané pouze pomocí HTML (Výsledek)</h3>
+            <hr class="hr-html">
+            <img src="../img/login-page.png" alt="Final page">
           </div>
 <!-- UKAZATEL -->
           <div class="dots">
-            <div class="dot active" onclick="currentSlide(1, 'htmlcards')"></div>
-            <div class="dot" onclick="currentSlide(2, 'htmlcards')"></div>
-            <div class="dot" onclick="currentSlide(3, 'htmlcards')"></div>
+            <span class="dot active html2" onclick="currentCard('html2', 0)"></span>
+            <span class="dot html2" onclick="currentCard('html2', 1)"></span>
           </div>
 <!-- TLAČÍTKA K HTML -->
       <div class="btn">
@@ -198,6 +218,12 @@
             }
             
           </div>
+<!-- UKAZATELE -->
+          <div class="dots">
+            <span class="dot active css-dots" onclick="currentCard('css', 0)"></span>
+            <span class="dot css-dots" onclick="currentCard('css', 1)"></span>
+            <span class="dot css-dots" onclick="currentCard('css', 2)"></span>
+          </div>
 <!-- TLAČÍTKO NEXT K CSS -->
           <button id="css-Prev-Btn" class="css-btn">Předchozí</button>
           <button id="css-Nxt-Btn" class="css-btn">Další</button>
@@ -231,6 +257,12 @@
         <div class="content jscard" id="jscard3" style="display: none;">
           <h3>Horší verze kódu</h3>
           <hr class="hr-js">
+        </div>
+<!-- UKAZATELE -->
+        <div class="dots">
+          <span class="dot active js-dots" onclick="currentCard('js', 0)"></span>
+          <span class="dot js-dots" onclick="currentCard('js', 1)"></span>
+          <span class="dot js-dots" onclick="currentCard('js', 2)"></span>
         </div>
 <!-- TLAČÍTKO NEXT K JS -->
         <button id="js-Prev-Btn" class="js-btn">Předchozí</button>

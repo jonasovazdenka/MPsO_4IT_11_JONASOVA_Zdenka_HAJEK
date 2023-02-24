@@ -26,7 +26,7 @@ window.onload = calcScrollValue;
 // Objekt s názvy karet pro každou skupinu
 const cardNames = {
   html: ["htmlcard1", "htmlcard2", "htmlcard3"],
-  html2: ["htmlcard4", "htmlcard5"],
+  html2: ["html2card1", "html2card2"],
   css: ["csscard1", "csscard2", "csscard3"],
   js: ["jscard1", "jscard2", "jscard3"],
 };
@@ -38,6 +38,13 @@ function changeCard(groupName, step) {
   const nextCard = (currentCard + cards.length + step) % cards.length;
   cards.forEach((card) => document.getElementById(card).style.display = "none");
   document.getElementById(cards[nextCard]).style.display = "block";
+  setActiveDot(groupName, nextCard);
+}
+
+function setActiveDot(groupName, index) {
+  const dots = document.querySelectorAll(`#${groupName} .dot`);
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[index].classList.add("active");
 }
 
 // Přidání event listenerů pro tlačítka pro každou skupinu
@@ -52,18 +59,3 @@ document.getElementById("css-Prev-Btn").addEventListener("click", () => changeCa
 
 document.getElementById("js-Nxt-Btn").addEventListener("click", () => changeCard("js", 1));
 document.getElementById("js-Prev-Btn").addEventListener("click", () => changeCard("js", -1));
-
-// DOTS
-
-function updateDots(slideIndex, cardGroup) {
-  const dots = document.querySelectorAll(`#${cardGroup} .dots .dot`);
-  for (let i = 0; i < dots.length; i++) {
-    if (i === slideIndex - 1) {
-      dots[i].classList.add('active');
-      dots[i].classList.remove('dot');
-    } else {
-      dots[i].classList.add('dot');
-      dots[i].classList.remove('active');
-    }
-  }
-}

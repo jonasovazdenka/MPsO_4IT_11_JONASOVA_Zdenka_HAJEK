@@ -137,12 +137,21 @@ h2 {
 
 /* HTML KARTA */
 
-.h-html, .htmlcard, .html-btn {
+.h-html, .htmlcard, .html-btn, .html2card {
   border-color: #f6ad88;
   background-color: #f8e3ca;
 }
 
 .hr-html {
+  background-color: #f6ad88;
+}
+
+.html-dot, .html2{
+  background-color: #f8e3ca;
+  border: 2px solid #f6ad88;
+}
+
+.dot.active.html-dot, .dot.active.html2 {
   background-color: #f6ad88;
 }
 
@@ -156,6 +165,15 @@ h2 {
   background-color: #8dc8d8;
 }
 
+.css-dots{
+  background-color: #dceef3;
+  border: 2px solid #8dc8d8;
+}
+
+.dot.active.css-dots {
+  background-color: #8dc8d8;
+}
+
 /* JS KARTA */
 .h-js, .jscard, .js-btn {
   border-color: #ffe566;
@@ -166,31 +184,30 @@ h2 {
   background-color: #ffe566;
 }
 
+.js-dots{
+  background-color: #fff6cc;
+  border: 2px solid #ffe566;
+}
+
+.dot.active.js-dots {
+  background-color: #ffe566;
+}
+
 
 /* DOT */
 
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 15px;
+.dots{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
-
 .dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 5px;
-  background-color: #f8e3ca;
-  outline: 1px solid #f6ad88;
-  border-radius: 50%;
   display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
 }
-
-.active {
-  background-color: #f6ad88;
-}
-
-
 /*BUTTON*/
 
 button {
