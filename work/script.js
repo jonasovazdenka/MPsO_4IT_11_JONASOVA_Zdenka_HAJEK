@@ -28,7 +28,9 @@ const cardNames = {
   html: ["htmlcard1", "htmlcard2", "htmlcard3"],
   html2: ["html2card1", "html2card2"],
   css: ["csscard1", "csscard2", "csscard3"],
+  css2: ["css2card1", "css2card2", "css2card3"],
   js: ["jscard1", "jscard2", "jscard3"],
+  js2: ["js2card1", "js2card2"],
 };
 
 // Funkce pro posunutí na další nebo předchozí kartu pro danou skupinu
@@ -57,5 +59,12 @@ document.getElementById("html2-Prev-Btn").addEventListener("click", () => change
 document.getElementById("css-Nxt-Btn").addEventListener("click", () => changeCard("css", 1));
 document.getElementById("css-Prev-Btn").addEventListener("click", () => changeCard("css", -1));
 
+document.getElementById("css2-Nxt-Btn").addEventListener("click", () => changeCard("css2", 1));
+document.getElementById("css2-Prev-Btn").addEventListener("click", () => changeCard("css2", -1));
+
 document.getElementById("js-Nxt-Btn").addEventListener("click", () => changeCard("js", 1));
 document.getElementById("js-Prev-Btn").addEventListener("click", () => changeCard("js", -1));
+
+document.getElementById("js2-Nxt-Btn").addEventListener("click", () => changeCard("js2", 1));
+document.getElementById("js2-Prev-Btn").addEventListener("click", () => changeCard("js2", -1));
+

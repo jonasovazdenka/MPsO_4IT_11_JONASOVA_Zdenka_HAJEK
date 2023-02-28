@@ -29,6 +29,10 @@ h1 {
   margin-bottom: -200px;
 }
 
+.logos {
+  height: 170px;
+}
+
 
 footer {
   position: absolute;
@@ -105,12 +109,13 @@ h2 {
 }
 
 #htmlcard1 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
 #theme{
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* LEPŠÍ VERZE KÓDU */
@@ -135,9 +140,13 @@ h2 {
   margin-bottom: 20px;
 }
 
+font.red {
+  font-weight: bold;
+}
+
 /* HTML KARTA */
 
-.h-html, .htmlcard, .html-btn, .html2card {
+.h-html, .htmlcard, .html-btn, .html2cards {
   border-color: #f6ad88;
   background-color: #f8e3ca;
 }
@@ -155,8 +164,34 @@ h2 {
   background-color: #f6ad88;
 }
 
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.htmlcard{
+  height: 600px;
+}
+p.content-html, .content-css{
+  background-color: #a5a5a541;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.csscard{
+  height: 560px;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+
 /* CSS KARTA */
-.h-css, .csscard, .css-btn{
+.h-css, .csscard, .css-btn, .css2cards{
   border-color: #8dc8d8;
   background-color: #dceef3;
 }
@@ -165,17 +200,42 @@ h2 {
   background-color: #8dc8d8;
 }
 
-.css-dots{
+.css-dots, .css2-dots{
   background-color: #dceef3;
   border: 2px solid #8dc8d8;
 }
 
-.dot.active.css-dots {
+.dot.active.css-dots, .dot.active.css2-dots {
   background-color: #8dc8d8;
 }
 
+.css2cards{
+  margin-top: 40px;
+}
+
+.HtmlCssCard{
+  overflow-y: scroll;
+  height: 370px;
+  box-shadow: inset 0 0 10px #8dc8d8b3;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.HtmlCssCard::-webkit-scrollbar-thumb {
+  background: #8dc8d8;
+  border-radius: 50px;
+}
+
+.css-tips {
+  line-height: 45px;
+}
+
+.css2cards{
+  height: 600px;
+}
+
 /* JS KARTA */
-.h-js, .jscard, .js-btn {
+.h-js, .jscard, .js-btn, .js2card, .js2-btn {
   border-color: #ffe566;
   background-color: #fff6cc;
 }
@@ -184,15 +244,22 @@ h2 {
   background-color: #ffe566;
 }
 
-.js-dots{
+.js-dots, .js2-dots{
   background-color: #fff6cc;
   border: 2px solid #ffe566;
 }
 
-.dot.active.js-dots {
+.dot.active.js-dots, .dot.active.js2-dots {
   background-color: #ffe566;
 }
 
+.jscard font{
+  font-weight: normal;
+}
+
+.jscard ol li{
+  line-height: 40px;
+}
 
 /* DOT */
 
@@ -208,6 +275,7 @@ h2 {
   border-radius: 50%;
   margin: 0 5px;
 }
+
 /*BUTTON*/
 
 button {
@@ -287,5 +355,20 @@ button {
 
   #htmlcard1 ol li{
     line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 1143px){
+  /*html cards*/
+  .content-html{
+    overflow-y: scroll;
+    height: 370px;
+    box-shadow: inset 0 0 10px #f6ad88;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .content-html::-webkit-scrollbar-thumb {
+    background: #f1b698;
+    border-radius: 50px;
   }
 }

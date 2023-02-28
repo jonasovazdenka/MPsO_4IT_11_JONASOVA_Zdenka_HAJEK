@@ -23,42 +23,42 @@
 <!-- NADPIS -->
   <div class="nadpis">
     <h1>Základy pro založení webu</h1>
+    <img src="../img/logos.png" alt="LOGOS" class="logos">
     <h3>Základy HTML, CSS, a JS</h3>
   </div>
 
 <!-- Text -->
-    <div class="main">
+  <div class="main">
 <!-- HTML -->
-        <div id="html" class="html">
+<div id="html">
             <h2 class="h-html">HTML</h2>
-            <div class="card-container">
 <!-- PRVNÍ KARTA HTML -->
-              <div class="content htmlcard" id="htmlcard1" style="display: block;">
+            <div class="content htmlcard" id="htmlcard1" style="display: block;">
               <h3>Tipy pro začátečníky</h3>
               <hr class="hr-html"/>
-              <ol>
+              <ol class="content-html">
                 <li>
                   <font id="theme"> Správná struktura HTML</font> -  HTML tag &lt;html&gt;, head tag &lt;head&gt;, body tag &lt;body&gt;
                 </li>
                 <li>
                   <font id="theme"> Nezapomeňte uzavírat tagy</font> - &lt;p&gt; Toto je příklad &lt;/p&gt; <br>
-                  <font color="red"> &emsp;POZOR!</font> 
-                  Některé tagy se uzavárají jinak např. <font color="red"> &lt;br/&gt;</font> a <font color="red">&lt;img ... /&gt; </font>
+                  <font class="red" color="red"> &emsp;POZOR!</font> 
+                  Některé tagy se uzavárají jinak např. <font class="red" color="red"> &lt;br/&gt;</font> a <font class="red" color="red">&lt;img ... /&gt; </font>
                 </li>
                 <li>
-                  <font id="theme">Pomocné weby</font> - <a href="https://www.w3schools.com/" class="w3s" target="_blank">W3Schools</a>
+                  <font id="theme"> Kurzy </font> - Doporučuji si udělat kurz na <a href="https://www.sololearn.com/" target="_blank">SoloLearn</a>
+                </li>
+                <li>
+                  <font id="theme">Pomocné weby</font> - <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
                 </li>
                 <li>
                   <font id="theme">Stylování stránky</font> - vytvořte nový soubor ".css" nepište to do HTML
                   <br>&emsp;(pojmenujte ho jak chcete, nejčasteji je používání style.css, tak vám to i html navrhne při linkování)
-                  <br>&emsp;pak stačí soubor pouze "nalinkovat": <font color="red">&lt;link rel="stylesheet" href="style.css"&gt;</font>
+                  <br>&emsp;pak stačí soubor pouze "nalinkovat": <font class="red" color="red">&lt;link rel="stylesheet" href="style.css"&gt;</font>
                 </li>
                 <li>
-                  <font id="theme">Správné značky pro nadpisy</font> - První/největší nadpis bude mít tag <font color="red">&lt;h1&gt;</font> Podnadpis bude mít tag <font color="red">&lt;h2&gt;</font> apod. (max. tag je &lt;h6&gt;)
-                  <br>&emsp; Pomáhá to se lépe zorientovat na stránce.
-                </li>
-                <li>
-                  <font id="theme">Alt tag</font> - používá se třeba při img tagu (obrázek). Když uživatel najede kurzorem na obrázek, zobrazí se text který je napsaný v alt tagu.
+                  <font id="theme">Správné značky pro nadpisy</font> - První/největší nadpis bude mít tag <font class="red" color="red">&lt;h1&gt;</font> Podnadpis bude mít tag <font class="red" color="red">&lt;h2&gt;</font> apod. (max. tag je &lt;h6&gt;)
+                  <br>&emsp; Pomáhá pro lepší orientaci na stránce.
                 </li>
               </ol>
               </div>
@@ -66,7 +66,7 @@
               <div class="content htmlcard" id="htmlcard2" style="display: none;">
                 <h3>Horší verze kódu</h3>
                 <hr class="hr-html"/>
-                <p>
+                <p class="content-html" style="line-height: 24px;">
                   &lt;!DOCTYPE html&gt; <br />
                   &lt;head&gt; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; &lt;/head&gt; <br />
                   &lt;body&gt; <br />
@@ -92,7 +92,7 @@
               <div class="content htmlcard" id="htmlcard3" style="display: none;">
                 <h3>Lepší verze kódu</h3>
                 <hr class="hr-html"/>
-                <p>
+                <p class="content-html">
                 &lt;!DOCTYPE html&gt; <br />
                   &emsp; &lt;head&gt; <br />
                   &emsp; &emsp; &lt;title&gt;Název stránky který se zobrazí v kartě stránky&lt;/title&gt; <br />
@@ -107,7 +107,6 @@
                   &emsp; &lt;/html&gt;<br />
                 </p>
                 </div>
-            </div>
 <!-- UKAZATEL -->
             <div class="dots">
               <span class="dot active html-dot" onclick="currentCard('html', 0)"></span>
@@ -120,12 +119,14 @@
             <button id="html-Prev-Btn" class="html-btn">Předchozí</button>
             <button id="html-Nxt-Btn" class="html-btn">Další</button>
           </div>
+        </div> <!--HTML CLOSE-->
 <!-- DRUHÁ ČÁST KARET HTML -->
+<div id="html2">
   <!-- PRVNÍ KARTA HTML -->
-          <div class="content html2card" id="html2card1" style="display: block;">
-            <h3>Příklad stránky napsané pouze pomocí HTML (Kód)</h2>
+          <div class="content html2cards" id="html2card1" style="display: block;">
+            <h3>Příklad stránky napsané pouze pomocí HTML (Kód)</h3>
               <hr class="hr-html">
-              <p>
+              <p class="content-html">
                 &lt;!DOCTYPE html&gt; <br>
                 &lt;html&gt; <br>
                 &lt;head&gt; <br>
@@ -143,32 +144,34 @@
                 &lt;/body&gt; <br>
                 &lt;/html&gt; <br>
               </p>
-          </div>
+            </div>
   <!-- DRUHÁ KARTA HTML -->
-          <div class="content html2card" id="html2card2" style="display: none;">
+          <div class="content html2cards" id="html2card2" style="display: none;">
             <h3>Příklad stránky napsané pouze pomocí HTML (Výsledek)</h3>
             <hr class="hr-html">
-            <img src="../img/login-page.png" alt="Final page">
-          </div>
+            <div class="image">
+            <img src="../img/login-page.png" alt="Final page"></div>
+            </div>
 <!-- UKAZATEL -->
           <div class="dots">
             <span class="dot active html2" onclick="currentCard('html2', 0)"></span>
             <span class="dot html2" onclick="currentCard('html2', 1)"></span>
-          </div>
+            </div>
 <!-- TLAČÍTKA K HTML -->
       <div class="btn">
         <button id="html2-Prev-Btn" class="html-btn">Předchozí</button>
         <button id="html2-Nxt-Btn" class="html-btn">Další</button>
-      </div>
+        </div>
+    </div>
 <!-- CSS -->
-        <div id="css">
+        <div id="css"> <!--CSS OPEN-->
           
           <h2 class="h-css">CSS</h2>
 <!-- PRVNÍ KARTA CSS -->
           <div class="content csscard" id="csscard1" style="display: block;">
             <h3>Tipy</h3>
             <hr class="hr-css">
-            <ol>
+            <ol class="css-tips">
               <li>CSS se používá k vzhledu webových stránek.</li>
 
               <li>id v HTML se v CSS značí jako "#" a class v HTML se v CSS značí jako "." <br>
@@ -187,37 +190,42 @@
               <li>CSS umožňuje různé úpravy textu, jako je změna velikosti písma, barvy, zarovnání a další.</li>
             </ol>
           </div>
-<!-- DRUHÁ KARTA CSS -->       
+
+<!-- DRUHÁ KARTA CSS -->
           <div class="content csscard" id="csscard2" style="display: none;">
-          <h3>Lepší verze kódu</h3>
-          <hr class="hr-css"/>
-          h1 { <br>
-            font-weight: bold; <br>
-            font-size: 24px; <br>
-            font-family: Arial, sans-serif; <br>
-            color: #FFCC00; <br>
-            margin: 25px auto 10px; <br>
-            text-align: center; <br>
-            text-transform: uppercase; <br>
-            letter-spacing: 1px; <br>
-          }
-          
-          </div>
-<!-- TŘETÍ KARTA CSS -->
-          <div class="content csscard" id="csscard3" style="display: none;">
             <h3>Horší verze kódu</h3>
             <hr class="hr-css"/>
+            <div id="content" class="css-tips content-css">
             h1 { <br>
-              font: bold 24px Arial, sans-serif;<br>
-              color: #ffcc00; <br>
-              margin-top: 25px; <br>
-              margin-bottom: 10px; <br>
-              text-align: center; <br>
-              text-transform: uppercase; <br>
-              letter-spacing: 1px; <br>
+              &emsp;  font: bold 24px Arial, sans-serif;<br>
+              &emsp;  color: #ffcc00; <br>
+              &emsp;  margin-top: 25px; <br>
+              &emsp;  margin-bottom: 10px; <br>
+              &emsp;  text-align: center; <br>
+              &emsp;  text-transform: uppercase; <br>
+              &emsp;  letter-spacing: 1px; <br>
             }
-            
+            </div>
           </div>
+
+<!-- TŘETÍ KARTA CSS -->       
+        <div class="content csscard" id="csscard3" style="display: none;">
+          <h3>Lepší verze kódu</h3>
+          <hr class="hr-css"/>
+          <div id="content" class="css-tips content-css">
+          h1 { <br>
+            &emsp;  font-weight: bold; <br>
+            &emsp;  font-size: 24px; <br>
+            &emsp;  font-family: Arial, sans-serif; <br>
+            &emsp;  color: #FFCC00; <br>
+            &emsp;  margin: 25px auto 10px; <br>
+            &emsp;  text-align: center; <br>
+            &emsp;  text-transform: uppercase; <br>
+            &emsp;  letter-spacing: 1px; <br>
+          }
+          </div>
+          </div>
+
 <!-- UKAZATELE -->
           <div class="dots">
             <span class="dot active css-dots" onclick="currentCard('css', 0)"></span>
@@ -227,36 +235,160 @@
 <!-- TLAČÍTKO NEXT K CSS -->
           <button id="css-Prev-Btn" class="css-btn">Předchozí</button>
           <button id="css-Nxt-Btn" class="css-btn">Další</button>
+        </div> <!--CSS CLOSE-->
+
+<!-- DRUHÁ ČÁST KARET CSS -->
+<div id="css2">
+  <!-- PRVNÍ KARTA CSS -->
+          <div class="content css2cards" id="css2card1" style="display: block;">
+            <h3>Příklad stránky napsané pomocí HTML a CSS (Kód)</h3>
+            <hr class="hr-css"/>
+            <h4>HTML Kód</h4>
+            <div id="content" style="line-height: 26px;">
+            &lt;!DOCTYPE html&gt; <br>
+            &emsp;    &lt;html&gt; <br>
+            &emsp;&emsp;    &lt;head&gt; <br>
+            &emsp;&emsp;&emsp;      &lt;title&gt;Basic Login Page&lt;/title&gt; <br>
+            &emsp;&emsp;&emsp;&emsp; <font class="red" color="red">&lt;link rel="stylesheet" href="style.css"&gt;</font> <br>
+            &emsp;&emsp;    &lt;/head&gt; <br>
+            &emsp;&emsp;    &lt;body&gt; <br>
+            &emsp;&emsp;&emsp;      &lt;form&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;h2&gt;Login&lt;/h2&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;label for="username"&gt;Username:&lt;/label&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;input type="text" id="username" name="username" required&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;label for="password"&gt;Password:&lt;/label&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;input type="password" id="password" name="password" required&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;        &lt;input type="submit" value="Login"&gt; <br>
+            &emsp;&emsp;&emsp;      &lt;/form&gt; <br>
+            &emsp;&emsp;    &lt;/body&gt; <br>
+            &emsp;    &lt;/html&gt; <br>
+            </div>
+          </div>
+  <!-- DRUHÁ KARTA CSS -->
+          <div class="content css2cards" id="css2card2" style="display: none;">
+            <h3>Příklad stránky napsané pomocí HTML a CSS (Kód)</h3>
+            <hr class="hr-css"/>
+            <h4>CSS kód</h4>
+            <div class="HtmlCssCard" id="content">
+              body { <br>
+                background-color: #ffedd8;<br>
+                font-family: Arial, sans-serif;<br>
+              }<br>
+              <br>
+              form {<br>
+                background-color: #ffedd8;<br>
+                border: 1px solid #ccc;<br>
+                padding: 20px;<br>
+                max-width: 400px;<br>
+                margin: 0 auto;<br>
+                display: grid;<br>
+                gap: 20px;<br>
+              }<br>
+              <br>
+              h2 {<br>
+                text-align: center;<br>
+                margin: 0;<br>
+              }<br>
+              <br>
+              label {<br>
+                display: block;<br>
+                font-weight: bold;<br>
+              }<br>
+              <br>
+              input[type="text"],<br>
+              input[type="password"] {<br>
+                width: 90%;<br>
+                padding: 10px;<br>
+                border: none;<br>
+                border-radius: 4px;<br>
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);<br>
+              }<br>
+              <br>
+              input[type="submit"] {<br>
+                background-color: #4CAF50;<br>
+                color: #fff;<br>
+                padding: 10px 20px;<br>
+                border: none;<br>
+                border-radius: 4px;<br>
+                cursor: pointer;<br>
+                transition: background-color 0.3s ease;<br>
+              }<br>
+              <br>
+              input[type="submit"]:hover {<br>
+                background-color: #45a049;<br>
+              }<br>
+            </div>
+          </div>
+
+<!-- TŘETÍ KARTA CSS -->
+          <div class="content css2cards" id="css2card3" style="display: none;">
+            <h3>Příklad stránky napsané pomocí HTML a CSS (Výsledek)</h3>
+            <hr class="hr-css">
+            <img src="../img/login-page-stage-2.png" alt="">
+            </div>
+  
+<!-- UKAZATELE -->
+          <div class="dots">
+            <span class="dot active css2-dots" onclick="currentCard('css2', 0)"></span>
+            <span class="dot css2-dots" onclick="currentCard('css2', 1)"></span>
+            <span class="dot css2-dots" onclick="currentCard('css2', 2)"></span>
+          </div>
+<!-- TLAČÍTKO NEXT K CSS -->
+          <button id="css2-Prev-Btn" class="css-btn">Předchozí</button>
+          <button id="css2-Nxt-Btn" class="css-btn">Další</button>
         </div>
+      </div><!--CSS2 CLOSE-->
+
 <!-- JAVASCRIPT -->
-      <div id="js">
+      <div id="js"><!--JS START-->
         <h2 class="h-js">JavaScript</h2>
 <!-- PRVNÍ KARTA JS -->
         <div class="content jscard" id="jscard1" style="display: block;">
           <h3>Tipy</h3>
           <hr class="hr-js">
+          <div id="content">
           <ol>
-            <li>Naučte se základní syntaxi a datové typy (proměnné, funkce, objekty, pole).</li>
-            <li>Pracujte s DOM (Document Object Model) pro manipulaci s HTML elementy.</li>
-            <li>Využívejte knihovny a frameworky jako jQuery nebo React pro vývoj aplikací.</li>
-            <li>Používejte konzolu pro debugování a ladění kódu.</li>
-            <li>Sledujte online tutoriály a cvičení, abyste se učili od odborníků.</li>
-            <li>Pracujte na projektech a vystavujte je na GitHubu, abyste zlepšili své portfolio.</li>
-            <li>Sdílejte své projekty a kód s jinými vývojáři a získávejte zpětnou vazbu.</li>
-            <li>Učte se nové funkce a API.</li>
-            <li>Přečtěte si dokumentaci k různým knihovnám a frameworkům.</li>
-            <li>Začněte s jednoduchými úlohami jako například kalkulačka nebo to-do aplikace.</li>
+            <li><font id="theme">Naučte se základy </font>- Není nutné se hned pustit do složitějších projektů. Rozumění základním konceptům vám pomůže lépe porozumět složitějším konceptům a rychleji se posunout dopředu.</li>
+
+            <li><font id="theme">Využívejte konzoli </font>- V konzoli můžete sledovat výstup svého kódu a hledat chyby. Naučte se používat konzoli a budete mít lepší přehled o tom, co se děje s vaším kódem.</li>
+
+            <li><font id="theme">Nepřejímejte si kód </font>- Kopírování kódu z internetu může být lákavé, ale nenaučí vás to, jak kód funguje. Raději se snažte psát kód sami, i když je to náročnější.</li>
+
+            <li><font id="theme">Začněte s jednoduchými projekty </font>- Zkuste si vytvořit nějakou jednoduchou aplikaci, jako například kalkulačku nebo galerii obrázků. Takové projekty vám pomohou získat zkušenosti a rychleji se posunout dopředu.</li>
+
+            <li><font id="theme">Používejte knihovny a frameworky </font>- Využívání knihoven a frameworků může zjednodušit práci a zrychlit vývoj aplikací. Začněte s nejpopulárnějšími knihovnami a frameworky a naučte se je používat.</li>
           </ol>
+          </div>
         </div>
 <!-- DRUHÁ KARTA JS -->
-        <div class="content jscard" id="jscard2" style="display: none;">
+        <div class="content jscard" id="jscard3" style="display: none;">
           <h3>Lepší verze kódu</h3>
          <hr class="hr-js">
+         <div id="content">
+         &emsp;&emsp;&emsp;&emsp;        // Tento kód vezme pole celých čísel, sečte je a vrátí výsledek.<br>
+          function sectiCelaCisla(cisla) {<br>
+            &emsp;  let soucet = 0;<br>
+            &emsp;  for (let i = 0; i < cisla.length; i++) {<br>
+              &emsp;&emsp;    <font class="red" color="red">soucet += cisla[i];</font><br> 
+              &emsp;  }<br>
+              &emsp;  return soucet;<br>
+          }<br>
+         </div>
         </div>
 <!-- TŘETÍ KARTA JS -->
-        <div class="content jscard" id="jscard3" style="display: none;">
+        <div class="content jscard" id="jscard2" style="display: none;">
           <h3>Horší verze kódu</h3>
           <hr class="hr-js">
+          <div id="content">
+          &emsp;&emsp;&emsp;&emsp;          // Tento kód vezme pole celých čísel, sečte je a vrátí výsledek. <br>
+          function sectiCelaCisla(cisla) { <br>
+            &emsp;  let soucet = 0;<br>
+            &emsp;  for (let i = 0; i < cisla.length; i++) {<br>
+              &emsp;&emsp;    <font class="red" color="red">soucet = soucet + cisla[i];</font><br>
+              &emsp;  }<br>
+              &emsp;  return soucet;<br>
+          }<br>
+          </div>
         </div>
 <!-- UKAZATELE -->
         <div class="dots">
@@ -267,6 +399,34 @@
 <!-- TLAČÍTKO NEXT K JS -->
         <button id="js-Prev-Btn" class="js-btn">Předchozí</button>
         <button id="js-Nxt-Btn" class="js-btn" style="margin-bottom: 50px;">Další</button>
+      </div> <!--JS CLOSE-->
+<!--JS2 START-->
+    <div id="js2">
+  <!--PRVNÍ KARTA JS-->
+      <div class="content js2card" id="js2card1" style="display: block;">
+        <h3>Příklad stránky napsané pomocí HTML, CSS a JS (Kód)</h3>
+        <hr class="hr-js">
+        <div id="content">
+
+        </div> 
+      </div>
+<!--DRUHÁ KARTA JS-->
+      <div class="content js2card" id="js2card2" style="display: none;">
+        <h3>Příklad stránky napsané pomocí HTML, CSS a JS (Výsledek)</h3>
+        <hr class="hr-js">
+        <div id="content">
+
+        </div> 
+      </div>
+<!-- UKAZATELE -->
+      <div class="dots">
+        <span class="dot active js2-dots" onclick="currentCard('js2', 0)"></span>
+        <span class="dot js2-dots" onclick="currentCard('js2', 1)"></span>
+      </div>
+<!-- TLAČÍTKO NEXT K JS -->
+      <button id="js2-Prev-Btn" class="js-btn">Předchozí</button>
+      <button id="js2-Nxt-Btn" class="js-btn" style="margin-bottom: 50px;">Další</button>
+    </div><!--JS2 CLOSE-->
     <footer>
       <p>Verze 0.6</p>
     </footer>
