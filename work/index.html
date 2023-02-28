@@ -150,7 +150,7 @@
             <h3>Příklad stránky napsané pouze pomocí HTML (Výsledek)</h3>
             <hr class="hr-html">
             <div class="image">
-            <img src="../img/login-page.png" alt="Final page"></div>
+            <img src="../img/login-page.png" alt="Final page" class="html-img"></div>
             </div>
 <!-- UKAZATEL -->
           <div class="dots">
@@ -244,7 +244,7 @@
             <h3>Příklad stránky napsané pomocí HTML a CSS (Kód)</h3>
             <hr class="hr-css"/>
             <h4>HTML Kód</h4>
-            <div id="content" style="line-height: 26px;">
+            <div id="content" style="line-height: 26px;" class="content-css">
             &lt;!DOCTYPE html&gt; <br>
             &emsp;    &lt;html&gt; <br>
             &emsp;&emsp;    &lt;head&gt; <br>
@@ -269,7 +269,7 @@
             <h3>Příklad stránky napsané pomocí HTML a CSS (Kód)</h3>
             <hr class="hr-css"/>
             <h4>CSS kód</h4>
-            <div class="HtmlCssCard" id="content">
+            <div class="HtmlCssCard content-css" id="content">
               body { <br>
                 background-color: #ffedd8;<br>
                 font-family: Arial, sans-serif;<br>
@@ -346,7 +346,7 @@
         <div class="content jscard" id="jscard1" style="display: block;">
           <h3>Tipy</h3>
           <hr class="hr-js">
-          <div id="content">
+          <div id="content" class="content-js">
           <ol>
             <li><font id="theme">Naučte se základy </font>- Není nutné se hned pustit do složitějších projektů. Rozumění základním konceptům vám pomůže lépe porozumět složitějším konceptům a rychleji se posunout dopředu.</li>
 
@@ -360,26 +360,12 @@
           </ol>
           </div>
         </div>
+
 <!-- DRUHÁ KARTA JS -->
-        <div class="content jscard" id="jscard3" style="display: none;">
-          <h3>Lepší verze kódu</h3>
-         <hr class="hr-js">
-         <div id="content">
-         &emsp;&emsp;&emsp;&emsp;        // Tento kód vezme pole celých čísel, sečte je a vrátí výsledek.<br>
-          function sectiCelaCisla(cisla) {<br>
-            &emsp;  let soucet = 0;<br>
-            &emsp;  for (let i = 0; i < cisla.length; i++) {<br>
-              &emsp;&emsp;    <font class="red" color="red">soucet += cisla[i];</font><br> 
-              &emsp;  }<br>
-              &emsp;  return soucet;<br>
-          }<br>
-         </div>
-        </div>
-<!-- TŘETÍ KARTA JS -->
         <div class="content jscard" id="jscard2" style="display: none;">
           <h3>Horší verze kódu</h3>
           <hr class="hr-js">
-          <div id="content">
+          <div id="content" class="content-js js-code">
           &emsp;&emsp;&emsp;&emsp;          // Tento kód vezme pole celých čísel, sečte je a vrátí výsledek. <br>
           function sectiCelaCisla(cisla) { <br>
             &emsp;  let soucet = 0;<br>
@@ -389,6 +375,22 @@
               &emsp;  return soucet;<br>
           }<br>
           </div>
+        </div>
+
+<!-- TŘEŘÍ KARTA JS -->
+        <div class="content jscard" id="jscard3" style="display: none;">
+          <h3>Lepší verze kódu</h3>
+         <hr class="hr-js">
+         <div id="content" class="content-js js-code">
+         &emsp;&emsp;&emsp;&emsp;        // Tento kód vezme pole celých čísel, sečte je a vrátí výsledek.<br>
+          function sectiCelaCisla(cisla) {<br>
+            &emsp;  let soucet = 0;<br>
+            &emsp;  for (let i = 0; i < cisla.length; i++) {<br>
+              &emsp;&emsp;    <font class="red" color="red">soucet += cisla[i];</font><br> 
+              &emsp;  }<br>
+              &emsp;  return soucet;<br>
+          }<br>
+         </div>
         </div>
 <!-- UKAZATELE -->
         <div class="dots">
@@ -428,7 +430,7 @@
       <button id="js2-Nxt-Btn" class="js-btn" style="margin-bottom: 50px;">Další</button>
     </div><!--JS2 CLOSE-->
     <footer>
-      <p>Verze 0.6</p>
+      <p>Verze 1.0</p>
     </footer>
     <script src="script.js"></script>
   </body>

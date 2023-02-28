@@ -174,15 +174,11 @@ font.red {
 .htmlcard{
   height: 600px;
 }
-p.content-html, .content-css{
+p.content-html, .content-css, .js-code{
   background-color: #a5a5a541;
   border-radius: 20px;
   padding: 15px;
   margin-top: 15px;
-}
-
-.csscard{
-  height: 560px;
 }
 
 img{
@@ -230,6 +226,10 @@ img{
   line-height: 45px;
 }
 
+.csscard{
+  height: 560px;
+}
+
 .css2cards{
   height: 600px;
 }
@@ -259,6 +259,11 @@ img{
 
 .jscard ol li{
   line-height: 40px;
+}
+
+.js-code{
+  margin-top: 50px;
+  height: 380px;
 }
 
 /* DOT */
@@ -360,7 +365,7 @@ button {
 
 @media screen and (max-width: 1143px){
   /*html cards*/
-  .content-html{
+  .content-html, .content-css, .css-tips, .content-js{
     overflow-y: scroll;
     height: 370px;
     box-shadow: inset 0 0 10px #f6ad88;
@@ -369,6 +374,28 @@ button {
   }
   .content-html::-webkit-scrollbar-thumb {
     background: #f1b698;
+    border-radius: 50px;
+  }
+
+  .html-img{
+    width: 90%;
+  }
+
+  /* css cards */
+  .content-css, .css-tips{
+    box-shadow: inset 0 0 10px #8dc8d8;
+  }
+  .content-css::-webkit-scrollbar-thumb, .css-tips::-webkit-scrollbar-thumb {
+    background: #8dc8d8;
+    border-radius: 50px;
+  }
+
+  /* js cards */
+  .content-js{
+    box-shadow: inset 0 0 10px #ffe566;
+  }
+  .content-js::-webkit-scrollbar-thumb{
+    background: #ffe566;
     border-radius: 50px;
   }
 }
