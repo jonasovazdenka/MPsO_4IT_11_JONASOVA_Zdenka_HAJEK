@@ -21,9 +21,8 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-//SLIDING
+//CAROUSEL
 
-// Objekt s názvy karet pro každou skupinu
 const cardNames = {
   html: ["htmlcard1", "htmlcard2", "htmlcard3"],
   html2: ["html2card1", "html2card2"],
@@ -33,7 +32,6 @@ const cardNames = {
   js2: ["js2card1", "js2card2"],
 };
 
-// Funkce pro posunutí na další nebo předchozí kartu pro danou skupinu
 function changeCard(groupName, step) {
   const cards = cardNames[groupName];
   const currentCard = cards.findIndex((card) => getComputedStyle(document.getElementById(card)).display !== "none");
@@ -49,7 +47,6 @@ function setActiveDot(groupName, index) {
   dots[index].classList.add("active");
 }
 
-// Přidání event listenerů pro tlačítka pro každou skupinu
 document.getElementById("html-Nxt-Btn").addEventListener("click", () => changeCard("html", 1));
 document.getElementById("html-Prev-Btn").addEventListener("click", () => changeCard("html", -1));
 
